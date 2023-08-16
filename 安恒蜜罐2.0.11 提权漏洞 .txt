@@ -1,0 +1,23 @@
+package passwd
+
+import (
+ "crypto/sha256"
+ "fmt"
+ "time"
+)
+
+func Main() {
+
+ timestamp := time.Now().Unix()
+ date := time.Unix(timestamp, 0).Format("2006-01-02")
+
+ XXX1 := "1234567890!@#$%^&*()" + date + "root"
+ XXXX1 := sha256.Sum256([]byte(XXX1))
+ XXXXX1 := fmt.Sprintf("%x", XXXX1)[:16]
+ VVV1 := "1234567890!@#$%^&*()" + date + "operator"
+ VVVV1 := sha256.Sum256([]byte(VVV1))
+ VVVVV1 := fmt.Sprintf("%x", VVVV1)[:16]
+ println(fmt.Sprintf("[+] root     passwd ->  %s", XXXXX1))
+ println(fmt.Sprintf("[+] operator passwd ->  %s", VVVVV1))
+
+}

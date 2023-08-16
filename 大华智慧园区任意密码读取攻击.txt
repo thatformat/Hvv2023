@@ -1,0 +1,1 @@
+GET /admin/user_getUserInfoByUserName.action?userName=system HTTP/1.1

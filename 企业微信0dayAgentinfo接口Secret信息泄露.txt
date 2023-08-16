@@ -1,0 +1,13 @@
+app="Tencent-企业微信"
+
+1.企业微信后台 重置secret 
+2.waf增加规则禁止访问漏洞点/cgi-bin/gateway/agentinfo
+
+企业微信api 可以利用这个secret获取企业微信的token 利用管理员的token直接操作企业的api 做企业微信管理员的操作。
+
+企业微信零日漏洞攻击事件，企业微信XXX.com/cgi-bin/gateway/agentinfo接口未授权情况下可直接获取企业微信secret等敏感信息，可导致企业微信全量数据被获取，文件获取、使用企业微信轻应用对内力量发送钓鱼文件和链接等风险临时缓释措施为将/cgi-bin.gateway/agentinfo在WAF上进行阻断，具体可联系企业微信团队进行应急，请各单位加强防范
+
+受影响版本：2.5.x、2.6.930000、以下；
+不受影响：2.7.x、2.8.x、2.9.x；
+
+

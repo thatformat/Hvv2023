@@ -1,0 +1,2 @@
+POC:
+/artemis-portal/artemis/env

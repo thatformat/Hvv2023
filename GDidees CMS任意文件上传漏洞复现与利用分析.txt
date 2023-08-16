@@ -1,0 +1,26 @@
+来自公众号： 小白嘿课
+搜索公众号可查阅详情 有截图复现过程
+本文链接：https://mp.weixin.qq.com/s/uhkWHKJBGLttjxUR2eRCIw
+
+
+0x01 漏洞概述
+
+漏洞编号：CVE-2023-27178
+
+GDidees CMS是法国一款开源的网站管理工具，可用于创建站点、照片或视频库。GDidees CMS 3.9.1及以下版本存在任意文件上传漏洞，允许未经授权的攻击者上传精心构造的文件并执行任意代码。
+
+0x02 影响版本
+
+GDidees CMS 3.9.1及以下。
+0x03 漏洞复现
+创建文件格式为phar的一句话木马文件。
+
+访问Roxy Fileman插件页面。
+
+上传木马
+
+此时我们发现，携带参数cmd=echo ‘csx lab’;访问cmd.phar页面，可以看到php代码成功执行。证明漏洞存在。
+
+
+修复意见：
+修改conf.json文件中的FORBIDDEN_UPLOADS字段，禁止上传phar格式的文件。

